@@ -19,5 +19,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v6
         with:
+          context: "{{defaultContext}}:docker"
           push: true
           tags: msa127001/aoc-dx:latest
